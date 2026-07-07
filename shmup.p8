@@ -41,15 +41,18 @@ function _update()
 	
 	--controls
 	if btn(0) then
-		spdx=-2
+		spdx-=2
 		shipspr=2
-	elseif btn(1) then
-		spdx=2
+	end
+	if btn(1) then
+		spdx+=2
 		shipspr=3
-	elseif btn(2) then
-		spdy=-2
-	elseif btn(3) then
-		spdy=2
+	end
+	if btn(2) then
+		spdy-=2
+	end
+	if btn(3) then
+		spdy+=2
 	end
 	
 	--shoot
